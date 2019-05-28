@@ -70,4 +70,4 @@ Due to this issue the `bg-config-server-v2-0-0` application is unable to retriev
 
 ## Expected Results
 
-The `spring:application:name`, if it exists in `appsetings.json`, should not be replaced with the name of the application from the manifest and should be used as the name of the application for which configuration will be retrieved via Config Server.
+The value of `spring:application:name`, if it exists, should not be replaced with the name of the application from the manifest and should be used as the name of the application for which configuration will be retrieved via Config Server.
