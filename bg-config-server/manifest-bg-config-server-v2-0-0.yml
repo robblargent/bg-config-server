@@ -9,6 +9,6 @@ applications:
   health-check-type: none
   instances: 1
   env:
-    FROM_ENVIRONMENT: This is an environment variable value
+    FROM_ENVIRONMENT: This is a "bg-config-server-v2-0-0" environment variable value
   services:
   - config-server

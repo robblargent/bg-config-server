@@ -1,0 +1,14 @@
+﻿---
+applications:
+- name: bg-config-server
+  path: ./bin/linux-x64
+  memory: 256MB
+  stack: cflinuxfs3
+  buildpacks:
+  - https://github.com/cloudfoundry/dotnet-core-buildpack.git
+  health-check-type: none
+  instances: 1
+  env:
+    FROM_ENVIRONMENT: This is a "bg-config-server" environment variable value
+  services:
+  - config-server

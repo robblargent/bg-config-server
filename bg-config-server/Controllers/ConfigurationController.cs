@@ -20,7 +20,7 @@ namespace bg_config_server.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<KeyValuePair<string, string>>> Get()
         {
-            return Ok(_configuration.AsEnumerable());
+            return Ok(_configuration.AsEnumerable().OrderBy(kv => kv.Key).AsEnumerable());
         }
     }
 }
